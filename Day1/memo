@@ -1,9 +1,9 @@
 # github
 
-git init
-git remote add origin <nama-url>
-git add .
+git status
+git add . atau nama file
 git commit -m "message kamu"
+
 git push origin master
 
 additional :
@@ -14,3 +14,5 @@ git branch -b nama-branch
 
 branch checkout : 
 git checkout
+
+git switch (nama brach)
