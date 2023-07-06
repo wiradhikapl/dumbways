@@ -63,214 +63,172 @@
 			border-style: none;
 		}
 
-  
+    /*create post blog*/
+    body {
+    margin: 0;
+    }
 
-body {
-  margin: 0;
-}
+    .blog-form {
+        background-color: whitesmoke;
+        font-weight: bold;
+        width: 600px;
+        height: 725px;
+        border-radius: 10px;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 0px 10px;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+    }
 
-.blog-form {
-    background-color: whitesmoke;
-    font-weight: bold;
-    width: 600px;
-    height: 725px;
-    border-radius: 10px;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 0px 10px;
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-}
+    .blog-form .form-container {
+      width: 500px;
+      margin-right: 15px;
+    }
 
-.blog-form .form-container {
-  width: 500px;
-  margin-right: 15px;
-}
+    .blog-form .form-container h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
-.blog-form .form-container h1 {
-  text-align: center;
-  margin-bottom: 40px;
-}
+    .blog-form form label {
+      font-size: 20px;
+      font-weight: bold;
+    }
 
-.blog-form form label {
-  font-size: 20px;
-  font-weight: bold;
-}
+    .blog-form form input,
+    textarea,
+    select {
+      width: 100%;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      background: lightgrey;
+      border-radius: 10px;
+    }
 
-.blog-form form input,
-textarea,
-select {
-  width: 100%;
-  font-size: 20px;
-  font-weight: 400;
-  padding: 8px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  background: lightgrey;
-  border-radius: 10px;
-}
+    .blog-form form textarea {
+      height: 200px;
+      border: solid 2px;
+      
+    }
 
-.blog-form form textarea {
-  height: 200px;
-  border: solid 2px;
-  
-}
+    .blog-form form .input-blog-image-group {
+      width: 100%;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      background: lightgrey;
+      border-radius: 10px;
+      border: solid 2px;
+      
+      cursor: pointer;
+    }
 
-.blog-form form .input-blog-image-group {
-  width: 100%;
-  font-size: 20px;
-  font-weight: 400;
-  padding: 8px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  background: lightgrey;
-  border-radius: 10px;
-  border: solid 2px;
-  
-  cursor: pointer;
-}
+    .blog-form form .input-blog-image-group label p {
+      font-size: 15px;
+    }
 
-.blog-form form .input-blog-image-group label p {
-  font-size: 15px;
-}
+    .blog-form form .input-blog-image-group label {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-.blog-form form .input-blog-image-group label {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+    .blog-form form .button-group {
+      text-align: right;
+    }
 
-.blog-form form .button-group {
-  text-align: right;
-}
+    .blog-form form button {
+      margin-top: 50px;
+      padding: 10px 20px;
+      font-size: 17px;
+      background: lightgrey;
+      border-radius: 10px;
+      border:solid 2px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-.blog-form form button {
-  margin-top: 50px;
-  padding: 10px 20px;
-  font-size: 17px;
-  background: lightgrey;
-  border-radius: 10px;
-  border:solid 2px;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
+    /* Blog Result */
+    .card-result {
+      background-color: ;
+			margin-bottom: 10px;
+		}
 
-/* Blog list */
-.blog .blog-list {
-  margin-top: 80px;
-  margin-bottom: 80px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+    .h1 {
+      display: grid;
+      margin-bottom: 20px;
+			grid-template-columns: auto auto auto;
+			justify-content: center;
+    }
 
-.blog .blog-list .blog-list-item {
-  width: 80%;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 2px solid #dbdbdb;
-  border-radius: 8px;
-  display: flex;
-}
+		#content {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			justify-content: center;
+		}
 
-.blog .blog-list .blog-list-item .blog-image {
-  flex: 1;
-}
+		.container-card {
+			width: 350px;
+			margin: 15px;
+			background-color: whitesmoke;
+			padding: 15px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px black;
+		}
 
-.blog .blog-list .blog-list-item .blog-image img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
+		.container-card img {
+      color: blue;
+			width: 100%;
+			border-radius: 10px;
+			height: 250px;
+			object-fit: cover;
+		}
 
-.blog .blog-list .blog-list-item .blog-content {
-  padding-left: 20px;
-  flex: 2;
-}
+		.container-card p {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
 
-.blog .blog-list .btn-group {
-  text-align: right;
-  margin-bottom: 20px;
-}
+		.container-card .programming-language i {
+			font-size: 30px;
+			margin-right: 25px;
+			margin-bottom: 20px;
+		}
 
-.blog .blog-list .btn-group .btn-edit {
-  padding: 5px 10px;
-  border: 0;
-  border-radius: 4px;
-  background: #dbdbdb;
-}
+		.container-card .btn-group {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container-card .btn-group button {
+      font-weight: bold;
+			width: 100%;
+			margin: 10px;
+			border-radius: 10px;
+			border: bold;
+			padding: 5px;
+			background-color: lightgray;
+			color: black;
+		}
 
-.blog .blog-list .btn-group .btn-post {
-  padding: 5px 10px;
-  border: 0;
-  border-radius: 4px;
-  background: #ec4d37;
-  color: #fff;
-}
+		.container-card .btn-group button:hover {
+			background-color: grey;
+			cursor: pointer;
+		}
 
-.blog .blog-list h1 a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.blog .blog-list .detail-blog-content {
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 20px;
-}
-
-.blog .blog-list .blog-list-item p {
-  margin-top: 20px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: justify;
-}
-
-/* Blog Detail */
-.blog-detail {
-  display: flex;
-  justify-content: center;
-}
-
-.blog-detail-container {
-  width: 80%;
-  margin: 40px 0;
-}
-
-.blog-detail-container img {
-  width: 100%;
-}
-
-.blog-detail-container h1 {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 44px;
-  line-height: 120%;
-  margin-bottom: 15px;
-}
-
-.blog-detail-container .author {
-  font-weight: 100;
-  font-size: 20px;
-  line-height: 120%;
-  margin-bottom: 20px;
-}
-
-.blog-detail-container p {
-  margin-top: 40px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 140%;
-  text-align: justify;
-}
-
-
+    .line {
+			border: 3px solid grey;
+		}
 
     </style>
 </head>
@@ -307,7 +265,8 @@ select {
                     <div class="input-blog-image-group">
                       <label for="input-blog-image">
                         <p>Attach File</p>
-                        <img src="images/file.png" alt="file" />
+                        <input type="file" id="input-file" hidden />
+				  	            <i class="fa-sharp fa-solid fa-file-import"></i>
                       </label>
                       <input type="file" id="input-blog-image" hidden />
                     </div>
@@ -318,12 +277,43 @@ select {
                 </form>
               </div>
             </div>
-        
             <div id="contents" class="blog-list">
-              <!-- dynamic content would be here -->
-        
-            </div>
           </div>
+        </div>
+
+<br><br><br>
+
+          <hr class="line">
+
+<br><br><br>
+
+          <section>
+            <div class="card-result">
+              <h1 class="h1">MY PROJECT</h1>
+              <div id="content">
+              <div class="container-card">
+                <img src="images/Cacing.jpg"/></a>
+                <h3>Cacing besar Alaska</h3>
+                <span>Durasi : 1 Hari lalu | Lokal berita</span>
+                <p>
+                Cacing besar Alaska ditemukan diujung bikini Bottom, kami memberikan peringatan kepada Bottomites untuk tidak keluar dimalam hari, atau Bokong, Ekor, Serta PR anak kalian akan menghilang
+                </p>
+                <div class="programming-language">
+                <i class="fa-brands fa-js" id="javascript"></i>
+                <i class="fa-brands fa-php" id="php"></i>
+                <i class="fa-brands fa-java" id="java"></i>
+                <i class="fa-brands fa-react" id="reactsJS"></i>
+                </div>
+                <div class="btn-group">
+                <button>Edit</button>
+                <button>Delete</button>
+                </div>
+              </div>
+              </div>
+            </div>
+            </section>
+
+<br><br><br>
 
 </body>
 </html>
