@@ -1,0 +1,177 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    background-color: white;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    height: 100%;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.form button {
+    margin-top: 20px;
+}
+
+.right-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-right: 30px;
+    width: 100%;
+}
+
+.right-button button {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.right-button button a {
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-size: 20px;
+    margin-right: 70px;
+}
+
+nav ul img {
+    width: 120px;
+    margin-left: 20px;
+    margin-top: 10px;
+    object-fit: contain;
+}
+
+/*start*/
+
+.main-body {
+    background: white;
+}
+
+.div-hut {
+    box-shadow: 0px 0px 20px black;
+    background: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1150px; height: 500px;
+    display: flex; margin: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.scnd-div {
+    width: 60%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.scnd-div h1 p {
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.thrd-div {
+    margin-top: 30px;
+    display: flex;
+}
+
+.thrd-div a button {
+    width: 80px;
+    height: 30px;
+    margin-top: 0px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+.cv {
+    margin-left: 20px;
+}
+
+.cv a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    margin-top: 50px"
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo a i {
+    font-size: 30px; 
+    margin-top: 50px;
+    margin-right: 35px;
+}
+
+.picture {
+    width: 400px;
+    margin: 50px;
+    background: white;
+    margin-top: 50px;
+}
+
+.picture div {
+    box-shadow:
+    0px 0px 20px black;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+}
+
+.picture div img {
+    text-align: center;
+    width: 400px;
+    height: 290px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.p1 {
+    text-align: center;
+    font-size: 20px;
+    margin: 15px auto;
+    font-weight: bold;
+}
+
+.p2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+

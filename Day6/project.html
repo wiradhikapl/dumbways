@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="images/Wlogo.jpg">
+	<link rel="stylesheet" href="css/project.css">
+	<link rel="stylesheet" href="css/projectdetail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Project</title>
+    <style>
+		
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    </style>
+</head>
+
+<body>
+	
+<!-- Navigation bar start -->
+
+    <nav>
+		<ul>
+			<li>
+				<img src="images/Wlogo.jpg">
+			</li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Project</a></li>
+		</ul>
+		<div class="right-button">
+			<button><a href="ContactMe.html">Contact Me</a></button>
+		</div>
+	</nav>
+
+<!-- Navigation bar end -->
+
+<form class="Form-container" id="Form-Project" onsubmit="addBlog(event)">
+        
+<!-- Title --> 
+
+	<div class="container">
+		<h1>Add my Project</h1>
+		<div class="Project-name">
+			<label>Project Name</label>
+			<input id="input-projectname" type="text">
+		</div>
+		
+<!-- Date --> 
+
+		<div class="Date-container">
+			<div>
+				<label>Start Date</label>
+				<input type="date" id="input-startdate">
+			</div>
+			<div>
+				<label>End Date</label>
+				<input id="input-endDate" type="date">
+			</div>
+		</div>
+		
+<!-- Description --> 
+
+		<div class="Descripton-container">
+			<label>Description</label>
+			<textarea id="input-descripton"></textarea>
+		</div>
+		
+
+<!-- Checkbox --> 
+
+		<div class="checkbox">
+			<label>Technologies</label>
+			<div class="checkbox-group">
+				<div>
+					<input type="checkbox" id="input-nodejs" class="multi-input" />
+					<label>Node JS</label>
+				</div>
+				<div>
+					<input type="checkbox" id="input-golang" class="multi-input" />
+					<label>Golang</label>
+				</div>
+				<div>
+					<input type="checkbox" id="input-reactjs" class="multi-input" />
+					<label>React JS</label>
+				</div>
+				<div>
+					<input type="checkbox" id="input-javascript" class="multi-input"/>
+					<label>Javascript</label>
+				</div>
+			</div>
+		</div>
+		
+<!-- Upload Image --> 
+
+		<div class="Upload-Image">
+			<label>Upload Image</label>
+			<div class="label-image">
+				<label for="input-image">
+					<p>Choose</p>
+					<i class="fa-solid fa-paperclip fa-fw"></i>
+					<input type="file" id="input-image" hidden />
+				</label>
+			</div>
+		</div>
+	</div>
+	<button>Submit</button>
+</form>
+<!-- End -->
+<br><br><br><br>
+
+<hr>
+
+<!-- Detail Blog -->
+
+<section>
+	<div class="card-result">
+	  <h1 class="h1">MY PROJECT</h1>
+	  <div id="content">
+	  <div class="container-card">
+		<img src="images/Cacing.jpg"/></a>
+		<h3>Cacing besar Alaska</h3>
+		<span>Durasi : 1 Hari lalu | Lokal berita</span>
+		<p>
+		Cacing besar Alaska ditemukan diujung bikini Bottom, kami memberikan peringatan kepada Bottomites untuk tidak keluar dimalam hari, atau Bokong, Ekor, Serta PR anak kalian akan menghilang
+		</p>
+		<div class="programming-language">
+		<i class="fa-brands fa-js" id="javascript"></i>
+		<i class="fa-brands fa-php" id="php"></i>
+		<i class="fa-brands fa-java" id="java"></i>
+		<i class="fa-brands fa-react" id="reactsJS"></i>
+		</div>
+		<div class="btn-group">
+		<button>Edit</button>
+		<button>Delete</button>
+		</div>
+	  </div>
+	  </div>
+	</div>
+	</section>
+
+<br><br><br><br>
+
+	<script src="js/project.js"></script>
+</body>
+</html>
