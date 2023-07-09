@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/ContactMe.css">
+	<link rel="shortcut icon" href="images/Wlogo.jpg">
+	<title>Contact Me</title>
+	<style>
+
+		@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+	</style>
+
+</head>			
+
+<body>
+
+    <nav>
+		<ul>
+			<li>
+				<img src="images/Wlogo.jpg">
+			</li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="project.html">Project</a></li>
+		</ul>
+		<div class="right-button">
+			<button><a href="ContactMe.html">Contact Me</a></button>
+		</div>
+	</nav>	
+
+    <div id="div">
+        <div id="div1">
+            <br>
+            <h1>Get in touch</h1>
+        </div>
+        
+        <div class="contact">
+            <form class="form">
+                <div>
+                    <label>
+                        Name
+                    </label>
+                        <input id="input-name"/>
+                </div>
+
+                <div>
+                    <label>
+                        Email
+                    </label>	
+                        <input id="input-email"/>
+                </div>
+
+                <div>
+                    <label>
+                        Phone Number
+                    </label>
+                        <input id="input-phone"/>
+                </div>
+
+                <div id="div2">
+                    <label>
+                        Subject	
+                    </label>
+                    <select id="input-subject">
+						<option value="">Chose...</option>
+                        <option value="Frontend Developer">Frontend Developer</option>
+                        <option value="Backend Developer">Backend Developer</option>
+                        <option value="Fullstack Developer">Fullstack Developer</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label id="div3">
+                        Your Massage
+                    </label>
+					<textarea id="input-message"></textarea> <!-- resize: none; untuk mengatur ukuran textarea -->
+                <button type="submit" class="btn-submit" onclick="submitData(event)">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+	<br><br><br>
+	<script src="js/contact.js"></script>
+</body>
+
+</html>

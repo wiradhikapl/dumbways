@@ -280,7 +280,7 @@
 <div class="main-div">
 	<h1>ADD MY PROJECT</h1>
 	<div class="main-container">
-		<form onsubmit="		(event)"> 								<!--WARNING-->
+		<form> 												<!--onsubmit=" (event)">WARNING-->
 			<div class="project-name">
 			  <label for="input-project">Project Name</label>
 			  <input type="text" id="input-project" />
@@ -303,44 +303,42 @@
 				<textarea id="input-description" cols="30" rows="5"></textarea>
 			</div>
 			
-			  	<label>Technologies</label>
+			<h4>Technologies</h4>
 			<div class="container-technologies">
 				<div class="tech left">
-				 	 <div class="framework">
-						<input type="checkbox" id="input-javascript" />
+					<div class="framework">
+						<input type="checkbox" id="input-javascript" class="multi-input" value="input-javascript"/>
 						<label for="input-javascript">JavaScript</label>
 				  	</div>
 
 				  	<div class="framework">
-						<input type="checkbox" id="input-reactJS" />
+						<input type="checkbox" id="input-reactJS" class="multi-input"/>
 						<label for="input-reactJS">ReactsJS</label>
 					</div>
 				</div>
 
 				<div class="tech right">
 				  	<div class="framework">
-						<input type="checkbox" id="input-php" />
+						<input type="checkbox" id="input-php" class="multi-input"/>
 						<label for="input-php">PHP</label>
 				 	</div>
 
 					<div class="framework">
-						<input type="checkbox" id="input-java" />
+						<input type="checkbox" id="input-java" class="multi-input"/>
 						<label for="input-java">java</label>
 					</div>
 				</div>
 			</div>
 
-			<div>
-				<label for="input-file">Upload Image</label>
-				<label for="input-file" class="input-file">
-				  	<span>choose</span>
-				  	<input type="file" id="input-file" hidden />
+			<div class="input-file">
+				<label for="input-image"></label>
+				  	<input type="file" id="input-image" />
 				  	<i class="fa-sharp fa-solid fa-file-import"></i>
 				</label>
 			</div>
 
 			<div class="btn-submit">
-				<button>Submit</button>
+				<button type="submit" onclick="addBlog(event)">Submit</button>
 			</div>
 		</form>
 	</div>
