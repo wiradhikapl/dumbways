@@ -102,13 +102,14 @@ nav ul img {
 }
 
 #div {
-    background-color: whitesmoke;
+    /*background-color: whitesmoke;*/
     width: 650px; 
     height: 730px; 
     border-radius: 10px; 
     margin-left: auto; 
-    margin-right: auto; 
-    box-shadow: 0px 0px 20px black;
+    margin-right: auto;
+    margin-top: 9%;
+    /*box-shadow: 0px 0px 20px black;*/
 }
 
 #div1 {
@@ -151,4 +152,161 @@ nav ul img {
     background-color: lightgrey;
     border: 2px black solid;
     margin-top: 10px;
+}
+
+/* Bar */
+.bars-container {
+    font-size: 20px;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    display: none;
+}
+
+.bars-container a {
+    width: 100%;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 5px 0px;
+}
+/* Bar */
+
+/* Bars Menu */
+@media  screen  and (min-width: 1281px) {
+    .bars {
+        display: none;
+    }
+
+    .bars-container a {
+        display: none;
+    }
+}
+
+@media  screen  and (max-width: 1280px) {
+    .a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li img {
+        width: 100%;
+    }
+
+    .images {
+        position:relative;
+        width: auto;
+    }
+
+    .divmain {
+        margin-top: 1%;
+        margin-left: -1%;
+    }
+
+    .welcome {
+        width: 100%;
+    }
+
+    nav .hidden {
+        display: none;
+    }
+
+    .bars button i {
+        margin-right: 60px;
+        font-size: 350%;
+    }
+
+    .bars-container {
+        margin-top: 75px;
+    }
+
+}
+
+@media  screen  and (max-width: 1075px) {
+    .images {
+        width: auto; 
+    }
+
+    .font2 {
+        margin-bottom: 10%;
+    }
+
+    .a {
+        margin: 50px;
+    }
+    
+    .icon {
+        margin-left: 1%;
+    }
+}
+
+@media  screen  and (max-width: 680px) {
+    .images {
+        width: auto; 
+    }
+
+    nav ul li img {
+        margin-left: -30px;
+    }
+
+    .bars button i {
+        margin-right: 20px;
+    }
+
+    .font2 {
+        margin-bottom: 10%;
+    }
+
+    .a {
+        margin: 50px;
+    }
+    
+    .icon {
+        margin-left: 1%;
+    }
+}
+
+@media  screen  and (max-width: 500px) {
+    .bars button i {
+        font-size: 40px;
+    }
+}
+
+@media  screen  and (max-width: 400px) {
+    .images {
+        width: auto;  
+    }
+
+    .bars button i {
+        font-size: 30px;
+    }
+
+    .a {  
+        margin: 50px;
+    }
+
+    .icon {
+        margin-left: 1%;
+    }
+
+    .button {
+        gap: 13px;
+    }
+
+    .welcome {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    div p {
+        text-align: justify; 
+    }
 }
