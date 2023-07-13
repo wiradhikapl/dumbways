@@ -1,80 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="images/Wlogo.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Home</title>
     <style>
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+        
     </style>
-
 </head>
 
 <body class="main-body">
-
+<!-- Navigation Bar -->
     <nav>
 		<ul>
 			<li>
 				<img src="images/Wlogo.jpg">
 			</li>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="project.html">Project</a></li>
+			<li class="hidden"><a href="index.html">Home</a></li>
+			<li class="hidden"><a href="project.html">Project</a></li>
 		</ul>
-		<div class="right-button">
-			<button><a href="ContactMe.html">Contact Me</a></button>
+		<div class="right-button collapse">
+			<button class="hidden"><a href="ContactMe.html">Contact Me</a></button>
 		</div>
+<!-- List Bar -->
+        <div class="right-button bars">
+            <button onclick="barsopen()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
 	</nav>	
-
-    <div class="div-hut">
-        <div class="scnd-div">
-            <div>
-                <h1>Hi Welcome to my hut</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, inventore! Odio impedit ea nisi eos assumenda. Culpa sit sunt, quasi ipsam delectus ratione dolor ab. Aperiam voluptatibus quisquam obcaecati et Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut facere modi iure architecto sint praesentium! Odit voluptatibus quo veniam rem placeat eligendi, cum doloribus enim consequuntur suscipit voluptatum tenetur. Tempore?
-                    </p>
-            </div>
-<br>
-            <div class="thrd-div">
-                <a href="#">
-                    <button>Contact</button>
-                </a>
-                <div class="cv">
-                    <a href="#">
-                        <h4>Download CV <i class="fa-solid fa-download"></i></h4>
-                    </a>
-                </div>
-            </div>
-
-            <div class="logo">
-                <a href="#">
-                    <i class="fa-brands fa-invision"></i>
-                </a>
-
-                <a href="#" style="text-decoration: none; color: black;">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="#" style="text-decoration: none; color: black;">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-
-                <a href="#" style="text-decoration: none; color: black;">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="picture">
-            <div>
-                <img src="images/handsome.jpg">
-                <p class="p1">Handsome Guy</p>
-                <p class="p2">FullStack DEVELOPER</p>
-            </div>
-        </div>
+<!-- Navigation Bar -->
+    <div class="bars-container" id="bars-container">
+        <a href="index.html">Home</a>
+        <a href="project.html">Project</a>
+        <a href="ContactMe.html">Contact Me</a>
     </div>
-    
+<!-- List Bar -->
+<!-- Start --> 
+    <div class="a">
+<!-- Image -->
+        <div class="images">
+            <img src="images/handsome.jpg"/>
+            <h3 class="font1">Handsome Guy </h3>
+            <p class="font2" >Fullstack Developer</p>
+        </div>
+        <div class="divmain"> 
+<!-- Content -->  
+            <div class="welcome">
+                <h1>
+                    Welcome To My Hut
+                </h1>
+                <p><br></p> <!--WARNING-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum rerum voluptatibus eum quae error earum nam dolorem voluptates praesentium minima ipsa, at aliquam quidem in, porro facilis sequi maxime omnis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam eaque dicta molestiae totam facere debitis cumque praesentium, repellendus id? Hic harum quibusdam doloribus  dolore accusantium aliquam tenetur labore? Quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora culpa vel, ducimus facere possimus expedita, deserunt architecto, est ea doloribus consectetur distinctio sit ullam assumenda porro placeat facilis. Ipsum, eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae fugiat accusantium animi consequuntur vero assumenda, dolorum nostrum omnis dicta magnam porro temporibus nemo tenetur, rerum nesciunt pariatur tempore! Asperiores, aperiam! </p>
+            </div>
+            <div class="button">
+                <a href="#" class="contact">contact</a>
+                <a href="#" class="download">download CV <i class="fa-solid fa-download"></i></a>
+            </div>
+<!-- Icon -->
+            <p class="icon">
+                <a href="#" class="iconlogo"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="iconlogo"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="iconlogo"><i class="fa-brands fa-invision"></i></a>
+                <a href="#" class="iconlogo"><i class="fa-brands fa-facebook"></i></a>   
+            </p>
+        </div> 
+    </div>
+<!--End-->
+    <script src="js/Bars.js"></script>
 </body>
+
 </html>
