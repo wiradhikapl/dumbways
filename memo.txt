@@ -15,3 +15,5 @@ branch checkout :
 git checkout
 
 git switch (nama brach)
+
+border: 2px solid black; + padding: 20px; = kotak

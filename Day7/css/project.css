@@ -64,45 +64,45 @@ text-align: center;
 
 /* Navigation Bar End */
 
-body {
+body{
     margin: 0;
     padding: 0;
     background-color: white;
 }
 
-label {
+label{
     font-size: large;
     font-weight: bold;
 }
 
-input {
+input{
     background-color: lightgrey;
     padding: 10px;
     border-radius: 10px;
     margin-top: 5px;
 }
 
-.Form-container {
+.Form-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.container {
+.container{
     width: 30%;
     height: 80%;
     margin-top: 6%;
 }
 
-.container h1 {
+.container h1{
     color: black;
     text-align: center;
     margin-bottom: 25px;
     margin-top: 65px;
 }
 
-.Project-name {
+.Project-name{
     display: flex;
     flex-direction: column;
 }
@@ -113,19 +113,19 @@ input {
     margin-top: 15px;
 }
 
-.Date-container div {
+.Date-container div{
     display: flex;
     width: 48%;
     flex-direction: column;
 }
 
-.Descripton-container {
+.Descripton-container{
     display: flex;
     flex-direction: column;
     margin-top: 15px;
 }
 
-.Descripton-container textarea {
+.Descripton-container textarea{
     background-color: lightgrey;
     border-radius: 10px;
     margin-top: 5px;
@@ -135,7 +135,7 @@ input {
     padding: 5px;
 }
 
-.checkbox {
+.checkbox{
     margin-top: 15px;
 }
 
@@ -145,23 +145,23 @@ input {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.checkbox-group div {
+.checkbox-group div{
     display: flex;
 } 
 
-.checkbox-group div label {
+.checkbox-group div label{
     margin-top: 5px;
     color: black;
 }
 
-.checkbox-group div input {
+.checkbox-group div input{
     width: 20px;
     height: 20px;
     margin-right: 10px;
     cursor: pointer;
 }
 
-.Upload-Image {
+.Upload-Image{
     margin-top: 15px;
 }
 
@@ -211,11 +211,7 @@ input {
 /* Form End */
 
 hr {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid grey;
-    border-radius: 10px;
+border: 2px solid gray;
 }
 
 /* Bar */

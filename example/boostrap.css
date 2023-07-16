@@ -1,0 +1,14 @@
+img {
+  width: 120px;
+  margin-left: 20px;
+  margin-top: 5px;
+  object-fit: contain;
+}
+
+#navbar {
+  background-color: black;
+}
+
+.nav-link {
+  color: goldenrod;
+}

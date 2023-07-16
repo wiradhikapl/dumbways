@@ -1,14 +1,49 @@
-/* Navigation Bar Start*/
-
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
 }
+
+input {
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.contact div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form div label {
+    font-weight: bold;
+}
+
+.form button {
+    margin-top: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;			
+    justify-content: center;
+    height: 100vh;
+    margin-top: 20px;
+}
+
 nav {
     display: flex;
     background-color: white;
     height: 50px;
 }
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -17,29 +52,22 @@ nav ul {
     height: 100%;
     gap: 20px;
 }
+
 nav ul li {
     list-style-type: none;
     font-weight: bold;
     font-size: 20px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: black;
 }
-nav ul img {
-    width: 120px;
-    margin-left: 20px;
-    margin-top: 10px;
-    object-fit: contain;
+
+.form button {
+    margin-top: 20px;
 }
-.right-button button a {
-    text-decoration: none;
-    color: black;
-    list-style-type: none;
-    font-weight: bold;
-    font-size: 20px;
-    margin-right: 70px;
-}
+
 .right-button {
     display: flex;
     flex-direction: row;
@@ -49,6 +77,7 @@ nav ul img {
     margin-right: 30px;
     width: 100%;
 }
+
 .right-button button {
     background-color: white;
     padding: 5px;
@@ -56,166 +85,73 @@ nav ul img {
     border-style: none;
 }
 
-h1 {
-   margin-top: 100px;
-margin-bottom: 50px;
-text-align: center;
-}
-
-/* Navigation Bar End */
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
-label {
-    font-size: large;
+.right-button button a {
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
     font-weight: bold;
-}
-
-input {
-    background-color: lightgrey;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 5px;
-}
-
-.Form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.container {
-    width: 30%;
-    height: 80%;
-    margin-top: 6%;
-}
-
-.container h1 {
-    color: black;
-    text-align: center;
-    margin-bottom: 25px;
-    margin-top: 65px;
-}
-
-.Project-name {
-    display: flex;
-    flex-direction: column;
-}
-
-.Date-container{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-.Date-container div {
-    display: flex;
-    width: 48%;
-    flex-direction: column;
-}
-
-.Descripton-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-}
-
-.Descripton-container textarea {
-    background-color: lightgrey;
-    border-radius: 10px;
-    margin-top: 5px;
-    resize: none;
-    border: 2px rgb(65, 63, 63) solid;
-    height: 200px;
-    padding: 5px;
-}
-
-.checkbox {
-    margin-top: 15px;
-}
-
-.checkbox-group {
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.checkbox-group div {
-    display: flex;
-} 
-
-.checkbox-group div label {
-    margin-top: 5px;
-    color: black;
-}
-
-.checkbox-group div input {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.Upload-Image {
-    margin-top: 15px;
-}
-
-.label-image label {
-    background-color: lightgrey;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.label-image label p {
-    padding: 10px;
-    border-radius: 10px;
-    background-color: grey;
-    color: black;
-}
-
-.label-image label i {
     font-size: 20px;
-    margin-right: 10px;
+    margin-right: 70px;
 }
 
-.Form-container button {
-    font-size: medium;
+nav ul img {
+    width: 120px;
+    margin-left: 20px;
+    margin-top: 10px;
+    object-fit: contain;
+}
+
+#div {
+    /*background-color: whitesmoke;*/
+    width: 650px; 
+    height: 730px; 
+    border-radius: 10px; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 9%;
+    /*box-shadow: 0px 0px 20px black;*/
+}
+
+#div1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#div2 {
+    row-gap: 10px;
+}
+
+#div3 {
+    margin-top: 15px;
+}
+
+.form button {
+    width: 80px;
+    border-radius: 10px;
+    background-color: lightgrey;
     font-weight: bold;
-    margin-top: 25px;
-    background-color: grey;
-    color: black;
-    width: 100px;
+    padding: 10px;
+    border: 2px black solid;
     cursor: pointer;
+}
+
+#input-subject {
+    margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    margin-left: 22.5%;
-}
-
-.Form-container p:hover {
+    border: 2px black solid;
     background-color: lightgrey;
+    width: 100%;
+    margin: auto;
 }
 
-.Form-container button:hover{
-    background-color: lightgrey;
-}
-
-/* Form End */
-
-hr {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid grey;
+#input-message {
+    resize: none;
+    height: 100px;
     border-radius: 10px;
+    background-color: lightgrey;
+    border: 2px black solid;
+    margin-top: 10px;
 }
 
 /* Bar */
