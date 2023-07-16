@@ -1,103 +1,98 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/ContactMe.css">
-	<link rel="shortcut icon" href="images/Wlogo.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<title>Contact Me</title>
-	<style>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/ContactMe.css" />
+    <link rel="shortcut icon" href="images/Wlogo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contact Me</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+    </style>
+  </head>
 
-		@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-	</style>
-
-</head>			
-
-<body>
-<!--Navigation Bar-->
+  <body>
+    <!--Navigation Bar-->
     <nav>
-		<ul>
-			<li>
-				<img src="images/Wlogo.jpg">
-			</li>
-			<li class="hidden"><a href="index.html">Home</a></li>
-			<li class="hidden"><a href="project.html">Project</a></li>
-		</ul>
-		<div class="right-button collapse">
-			<button class="hidden"><a href="ContactMe.html">Contact Me</a></button>
-		</div>
-        <!-- List Bar -->
-        <div class="right-button bars">
-            <button onclick="barsopen()">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-	</nav>
-<!--Navigation Bar-->
-<div class="bars-container" id="bars-container">
-    <a href="index.html">Home</a>
-    <a href="project.html">Project</a>
-    <a href="ContactMe.html">Contact Me</a>
-</div>
-<!-- List Bar -->
-<!-- Start -->
-    <div id="div">
-        <div id="div1">
-            <br>
-            <h1>Get in touch</h1>
-        </div>
-<!-- Form -->        
-        <div class="contact">
-            <form class="form">
-<!-- Name -->
-                <div>
-                    <label>
-                        Name
-                    </label>
-                        <input id="input-name"/>
-                </div>
-<!-- Email -->
-                <div>
-                    <label>
-                        Email
-                    </label>	
-                        <input id="input-email"/>
-                </div>
-<!-- Phone Number -->
-                <div>
-                    <label>
-                        Phone Number
-                    </label>
-                        <input id="input-phone"/>
-                </div>
-<!-- Subject -->
-                <div id="div2">
-                    <label>
-                        Subject	
-                    </label>
-                    <select id="input-subject">
-						<option value="">Chose...</option>
-                        <option value="Frontend Developer">Frontend Developer</option>
-                        <option value="Backend Developer">Backend Developer</option>
-                        <option value="Fullstack Developer">Fullstack Developer</option>
-                    </select>
-                </div>
-<!-- Your Massage -->
-                <div>
-                    <label id="div3">
-                        Your Massage
-                    </label>
-					<textarea id="input-message"></textarea> <!-- resize: none; untuk mengatur ukuran textarea -->
-                <button type="submit" class="btn-submit" onclick="submitData(event)">Submit</button>
-                </div>
-            </form>
-        </div>
+      <ul>
+        <li>
+          <img src="images/Wlogo.jpg" />
+        </li>
+        <li class="hidden"><a href="index.html">Home</a></li>
+        <li class="hidden"><a href="project.html">Project</a></li>
+        <li class="hidden"><a href="testimonial.html">Testimonial</a></li>
+      </ul>
+      <div class="right-button collapse">
+        <button class="hidden"><a href="ContactMe.html">Contact Me</a></button>
+      </div>
+      <!-- List Bar -->
+      <div class="right-button bars">
+        <button onclick="barsopen()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <!--Navigation Bar-->
+    <div class="bars-container" id="bars-container">
+      <a href="index.html">Home</a>
+      <a href="project.html">Project</a>
+      <a href="ContactMe.html">Contact Me</a>
+      <a href="testimonial.html">Testimonial</a>
     </div>
-<!-- End -->
-	<br><br><br>
+    <!-- List Bar -->
+    <!-- Start -->
+    <div id="div">
+      <div id="div1">
+        <br />
+        <h1>Get in touch</h1>
+      </div>
+      <!-- Form -->
+      <div class="contact">
+        <form class="form">
+          <!-- Name -->
+          <div>
+            <label> Name </label>
+            <input id="input-name" />
+          </div>
+          <!-- Email -->
+          <div>
+            <label> Email </label>
+            <input id="input-email" />
+          </div>
+          <!-- Phone Number -->
+          <div>
+            <label> Phone Number </label>
+            <input id="input-phone" />
+          </div>
+          <!-- Subject -->
+          <div id="div2">
+            <label> Subject </label>
+            <select id="input-subject">
+              <option value="">Chose...</option>
+              <option value="Frontend Developer">Frontend Developer</option>
+              <option value="Backend Developer">Backend Developer</option>
+              <option value="Fullstack Developer">Fullstack Developer</option>
+            </select>
+          </div>
+          <!-- Your Massage -->
+          <div>
+            <label id="div3"> Your Massage </label>
+            <textarea id="input-message"></textarea>
+            <!-- resize: none; untuk mengatur ukuran textarea -->
+            <button type="submit" class="btn-submit" onclick="submitData(event)">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End -->
+    <br /><br /><br />
     <script src="js/Bars.js"></script>
-	<script src="js/contact.js"></script>
-</body>
-
+    <script src="js/contact.js"></script>
+  </body>
 </html>
