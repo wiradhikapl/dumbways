@@ -1,68 +1,68 @@
 .card-result {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .h1 {
-display: grid;
-margin-bottom: 20px;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
+  display: grid;
+  margin-bottom: 20px;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
 }
 
 #content {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
 }
 
 .container-card {
-    width: 350px;
-    margin: 15px;
-    background-color: whitesmoke;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px black;
+  width: 350px;
+  margin: 15px;
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
 }
 
 .container-card img {
-    width: 100%;
-    border-radius: 10px;
-    height: 250px;
-    object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .container-card p {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .container-card .programming-language i {
-    font-size: 30px;
-    margin-right: 25px;
-    margin-bottom: 20px;
+  font-size: 30px;
+  margin-right: 25px;
+  margin-bottom: 20px;
 }
 
 .container-card .btn-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container-card .btn-group button {
-font-weight: bold;
-    width: 100%;
-    margin: 10px;
-    border-radius: 10px;
-    border: bold;
-    padding: 5px;
-    background-color: lightgray;
-    color: black;
+  font-weight: bold;
+  width: 100%;
+  margin: 10px;
+  border-radius: 10px;
+  border: bold;
+  padding: 5px;
+  background-color: lightgray;
+  color: black;
 }
 
 .container-card .btn-group button:hover {
-    background-color: grey;
-    cursor: pointer;
+  background-color: grey;
+  cursor: pointer;
 }
 
 .line {
-    border: 3px solid grey;
+  border: 3px solid grey;
 }

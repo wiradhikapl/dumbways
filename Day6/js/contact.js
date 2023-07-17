@@ -38,17 +38,17 @@ function submitData(event) {
   let subject = document.getElementById("input-subject").value;
   let message = document.getElementById("input-message").value;
 
-  //  contoh memanggil OBJECT dengan tanda { } kurung kurawal | bersamaan dengan nama object dan nilai
+  // contoh memanggil OBJECT dengan tanda { } kurung kurawal | bersamaan dengan nama object dan nilai
 
   let objectData = {
-    name,
+    name: name,
     email,
     phone,
     subject,
     message,
   };
   //  memanggil memanggil ARRAY dengan tanda [ ] kurung siku | hanya memanggil nilai saja | nama index {0,1,2,3,...}
-  //  let arrayData = [name, email, phone, subject, message]
+  // let arrayData = [name, email, phone, subject, message]
 
   console.log(objectData);
 
@@ -63,12 +63,12 @@ function submitData(event) {
   } else if (message === "") {
     return alert("Data cannot be empty!");
   }
-  // untuk email yang dituju
+
   const emailReceiver = "google@gmail.com";
 
   let a = document.createElement("a");
   a.href = `mailto:${emailReceiver}?subject=${subject}&body=Halo nama saya ${name},\n${message}, silahkan kontak saya di nomor berikut : ${phone}`;
   a.click();
-
+  // opsional "alert" bisa ditampilkan atau tidak //
   alert(`name : ${name}\nemail : ${email}\nphone : ${phone}\nsubject : ${subject}\nmessage: ${message}`);
 }
